@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      
+      <nav class="nav__header">
+        <div class="cos">
+          <div class="mobile__menu">
+            <img class="open" src="./images/icon-menu.svg" alt="Menu" />
+          </div>
+          <img class="logo" src="./images/logo.svg" alt="sneaker" />
+        </div>
+        
+        <ul class="nav__collections">
+          <li class="nav__collections__list">
+            <a class="nav__collections__link" href="#">Collections</a>
+          </li>
+          <li class="nav__collections__list">
+            <a class="nav__collections__link" href="#">Men</a>
+          </li>
+          <li class="nav__collections__list">
+            <a class="nav__collections__link" href="#">Women</a>
+          </li>
+          <li class="nav__collections__list">
+            <a class="nav__collections__link" href="#">About</a>
+          </li>
+          <li class="nav__collections__list">
+            <a class="nav__collections__link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="cart">
+          <button class="cart__icon">
+            <img src="./images/icon-cart.svg">
+            <span class="cart__icon__count">0</span>
+          </button>
+          <img class="avatar" src="./images/image-avatar.png" alt="avatar" />
+        </div>
+      </nav>
+      <div class="cart__container">
+        <div class="cart-list">
+          <div class="cart_header">
+            <p>Cart</p>
+          </div>
+          <div class="empty">
+            <p class="empty_alert">Your cart is empty</p>
+          </div>
+          <!--<div class="cart-item">
+            <img class="cart__img" src="images/image-product-1-thumbnail.jpg" alt="product image">
+            <div class="cart-item-info">
+              <h3 class="cart-item-name">Fall Limited Edition Sneakers</h3>
+              <div>
+                <span class="cart-item-price">$125.00</span>
+                <span>x</span>
+                <span class="cart-item-count">3</span>
+                <span class="cart-item-result">$375.00</span>
+              </div>
+            </div>
+            <div class="delete">
+              <img src="./images/icon-delete.svg" alt="" />
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main__section">
+    <section class="mobile__slides">
+      <div class="mobile__slide">
+        <img class="mobile__image__slide" src="./images/image-product-1.jpg" alt="" />
+        <img class="mobile__image__slide" src="./images/image-product-2.jpg" alt="" />
+      </div>
+      <div class="slides">
+        <div>
+          <img class="mobile__previous" src="./images/icon-previous.svg" alt="" />
+        </div>
+        <div>
+          <img class="mobile__next" src="./images/icon-next.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="main__sneaker__container">
+      <div class="sneaker__img">
+        <img class="sneaker__product" src="./images/image-product-1.jpg" alt="" />
+      </div>
+      <div class="thumbnails">
+        <div class="slider__desktop thumbnail active">
+          <img data-id="product-1" class="thumbnail__img one" src="./images/image-product-1-thumbnail.jpg"
+            alt="" />
+        </div>
+        <div class="slider__desktop thumbnail">
+          <img data-id="product-2" class="thumbnail__img" src="./images/image-product-2-thumbnail.jpg" alt="" />
+        </div>
+        <div class="slider__desktop thumbnail">
+          <img data-id="product-3" class="thumbnail__img" src="./images/image-product-3-thumbnail.jpg" alt="" />
+        </div>
+        <div class="slider__desktop thumbnail">
+          <img data-id="product-4" class="thumbnail__img" src="./images/image-product-4-thumbnail.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="sneaker__company__section">
+      <h4>Sneaker Company</h4>
+      <h2 class="fall_limited">Fall Limited Edition Sneakers</h2>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion.
+        Featuring a durable rubber outer sole, they’ll withstand everything
+        the weather can offer.
+      </p>
+      <div class="sneaker__price__discount">
+        <div class="sneaker__prices">
+          <span class="dollar">$<span class="sneaker__price">125.00</span></span>
+          <span class="fifty__off">50%</span>
+        </div>
+        <span class="sneaker__cancel">$250.00</span>
+      </div>
+      <div class="cart__section">
+        <div class="cart__box">
+          <button class="btn decrease">
+            <img src="./images/icon-minus.svg" alt="icon-minus" />
+          </button>
+          <span class="value">0</span>
+          <button class="btn increase">
+            <img src="./images/icon-plus.svg" alt="icon-plus" />
+          </button>
+        </div>
+        <div class="add__to__cart">
+          <img src="./images/icon-cart.svg">
+          <span>Add to cart</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="modal">
+    <div class="screen"></div>
+    <div class="modal__content">
+      <div class="close">
+        <img src="./images/icon-close.svg">
+      </div>
+      <div class="modal__img">
+        <img src="./images/image-product-1.jpg" alt="" class="modal__product__img" />
+        <div class="slides">
+          <div class="previous">
+            <img src="./images/icon-previous.svg">
+          </div>
+          <div class="next">
+            <img src="./images/icon-next.svg">
+          </div>
+        </div>
+      </div>
+
+      <div class="slides__container">
+        <div class="slider__thumbnail thumb">
+          <img data-id="1" class="thumb__img" src="./images/image-product-1-thumbnail.jpg" alt="" />
+        </div>
+        <div class="slider__thumbnail thumb">
+          <img data-id="2" class="thumb__img" src="./images/image-product-2-thumbnail.jpg" alt="" />
+        </div>
+        <div class="slider__thumbnail thumb">
+          <img data-id="3" class="thumb__img" src="./images/image-product-3-thumbnail.jpg" alt="" />
+        </div>
+        <div class="slider__thumbnail thumb">
+          <img data-id="4" class="thumb__img" src="./images/image-product-4-thumbnail.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
